@@ -1,0 +1,441 @@
+:root{
+    --brown:#451E26;
+    --paleviolet:##875053;
+    --paleyellow:#D2BF55;
+    --white:#FFEED6;
+    --green:#095256
+
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size:cover; */
+    width: 100%;
+    /* background-color: beige; */
+}
+header {
+    display: flex;
+    /* position: fixed;
+    margin-top:  0px; */
+}
+.firstpart .head{
+    background-color:rgb(0, 10, 0);
+    position: sticky;
+    top: 0px;
+}
+.firstpart {
+    background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size:cover; 
+   
+}
+.logo{
+    display: flex;
+    flex: 3;
+    color: var(--white);
+    margin-left: 10px;
+    
+}
+.head a{
+    color: var(--white);
+    text-decoration: none;
+}
+.head a:hover{
+    color: white;
+    background-color: #D2BF55;
+    padding: 10px;
+}
+.home,.menu,.contact{
+    display: flex;
+    align-items: center;
+   
+    flex: 1;
+}
+.title{
+    text-align: center;
+    /* background-color: darkgreen; */
+    color: var(--white);
+    padding: .8em;
+    font-weight: bolder;
+
+}
+.enjoy{
+   
+    font-size: 4em;
+    font-weight: bolder;
+    display: flex;
+    color: whitesmoke;
+    margin-top: 20vh;
+    padding: 1em auto auto 1em;
+    margin-left: 1.25em;
+}
+#para1{
+    font-size: medium;
+    padding-top: 2em;
+    padding-left:5em ;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.orderbutton {
+    padding-top: 2em;
+    padding-left:5em ;
+    padding-bottom: 5em;
+    
+}
+.orderbutton button{
+    background-color: var(--paleyellow);
+    font-weight: bold;
+    padding: 1em;  
+    border-radius: 2em;
+    border:2px solid var(--paleyellow);
+    
+}
+
+.orderbutton button:hover{
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-property: var(--white);
+    transition-timing-function: ease-in-out;
+    transform:scale(1.2);
+
+}
+.cards {
+    display: flex;
+    /* flex: 1; */
+    flex-wrap: wrap;
+    /* min-width: 635px; */ 
+    /* gap: 20px;   */
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+.cards div{
+    width: 200px;
+    height: 230px;
+    /* padding: 2em; */
+    /* border: 1px solid black; */
+    margin-top: 3em;
+    padding:1em ;
+    /* text-align: justify; */
+  
+}
+.cards div:hover{
+    background-color:darkorange;
+    color: whitesmoke;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transform:scale(1.01);
+}
+.main .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                      "i1 i2"
+                      "i3 i4";
+    gap: 15px;
+    
+}
+#i1{
+    grid-area: i1;
+}
+#i2{
+    grid-area: i2;
+    margin-top: 50px;
+}
+#i3{
+    grid-area: i3;
+    margin-left: 50px;
+}
+#i4{
+    grid-area: i4;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+.container{
+      min-width:560px;
+      min-height: 530x;
+}
+.aboutus{
+    width:500px;
+    height: 500x;
+}
+.main .aboutus div h3{
+    color: darkgoldenrod;
+}
+.main .aboutus div p{
+    line-height: 1.5em;
+    text-align: justify;
+}
+.main .aboutus div button{
+    padding: 1em;
+    background-color: #451E26;
+    color:whitesmoke;
+    border-radius: 5px;
+    border-color: #451E26;
+    width: 150px;
+}
+.main .aboutus div button:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: darkorange;
+    border-color: #451E26;
+}
+.foodmenu div h2{
+    color: #D2BF55;
+    position: relative;
+    text-align: center;
+}
+.foodmenu div h1{
+    font-weight: bolder;
+    position: relative;
+    text-align: center;
+    color: darkorange;
+}
+.foodflex{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+   
+}
+.foodflex .fooditems div img,span{
+    margin-right: 10px;
+    
+}
+.foodflex .fooditems div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.foodflex .fooditems div img{
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+}
+.foodflex .fooditems div span{
+    display: flex;
+    flex: 1;
+    font-weight: bold;
+}
+.foodflex{
+    /* min-width: 750px; */
+    background:linear-gradient(grey,whitesmoke);
+}
+table{
+    min-width: 750px;
+    background:linear-gradient(grey,whitesmoke);
+}
+table td{
+    padding: 12px;
+    font-weight: bold;
+
+}
+.mainbooknow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* flex-basis: 0; */
+    /* background-color: rgb(66, 65, 65); */
+    background: url(https://images.pexels.com/photos/5691695/pexels-photo-5691695.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: contain;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .mainbooknow .booknow form div{
+   display: grid;
+   grid-template-columns: repeat(2,autofill);
+   grid-template-rows: repeat(4,autofill);
+   grid-template-areas: 
+                     "b1 b2"
+                     "b3 b4"
+                     "b5 b5"
+                     "b6 b6";
+    background-color: grey;
+}
+#b1{
+    grid-area: b1;
+}
+#b12{
+    grid-area: b2;
+}
+#b3{
+    grid-area: b3;
+}
+#b4{
+    grid-area: b4;
+}
+#b5{
+    grid-area: b5;
+}
+#b6{
+    grid-area: b6;
+}*/
+.mainbooknow .booknow form h1,#h2{
+    color: whitesmoke;
+}
+.mainbooknow .booknow form #h2{
+    color: whitesmoke;
+}
+.mainbooknow .booknow form div{
+    padding: 12px 0px 12px 12px;
+} 
+.mainbooknow .booknow form div input,select,button{
+    padding: 6px;
+   
+} 
+ /* .mainbooknow .image img{
+    align-content: stretch;
+    height: 500px;
+    width: 470px;
+}  */
+.booknow button:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: darkorange;
+    transition-duration: 0.25s;
+    transition-property: var(--white);
+    transition-timing-function: ease-in-out;
+    transform:scale(1.2);
+   
+} 
+.tables table{
+    display: flex;
+    justify-content: center;
+}
+.team h1{
+    text-align: center;
+    color:darkorange
+}
+.team h2{
+    text-align: center;
+    color:darkgoldenrod
+}
+.sam{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.sam img{
+    border-radius: 20px; 
+     margin-top: 7px;
+}
+
+.sam img:hover{
+    transition-duration: 0.25s;
+    transition-property: var(--white);
+    transition-timing-function: ease-in-out;
+    transform:scale(1.1);
+   
+} 
+#Testimonial{
+    text-align: center;
+    color: darkgoldenrod;
+}
+#client{
+    text-align: center;
+    color: darkorange;
+}
+.Testimonial{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.Testimonial div{
+    width: 250px;
+    height: 270px;
+    text-align: justify;
+    /* border: 1px solid  #451E26; */
+    border-radius: 10px;
+}
+.Testimonial div p,img{
+    padding: 0px 10px 5px 10px;
+}
+.Testimonial div img:hover{
+      color: whitesmoke;
+      background-color: wheat;
+      border-radius: 50%;
+}
+
+.Testimonial div:hover{
+    color: whitesmoke;
+    background-color: gray;
+    transition-duration: 0.25s;
+    transition-property: var(--white);
+    transition-timing-function: ease-in-out;
+    transform:scale(1.1);
+    
+}
+.Testimonial .logoflex{
+    display: inline-flex;
+    align-items: center;
+}
+.Testimonial .h2{
+    
+}
+.foot{
+    background-color: rgb(7, 7, 31);
+}
+.foot .foot1{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(7, 7, 31);
+    flex-wrap: wrap;
+}
+.foot .foot1 div{
+    line-height: 1.7em;
+}
+.foot .foot1 h3{
+    color: gold;
+}
+.foot .foot1 li,a{
+    color: white;
+    text-decoration: none;
+}
+.foot .foot1 #openings h2{
+    color: gold;
+}
+.foot .foot1 #openings p{
+    color: white
+}
+.foot .foot1 div a:hover{
+    cursor: pointer;
+    color: darkorange;
+    /* transition-duration: 0.25s;
+    transition-property: var(--white);
+    transition-timing-function: ease-in-out;
+    transform:scale(1.5); */
+}
+.foot .foot1 li{
+    list-style:square;
+}
+.foot .foot1 input,button{
+    padding: 10px;
+    background-color: white;
+}
+.foot .foot1 div button:hover{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: darkorange;
+}
+.foot .foot2,.foot3{
+    color: white;
+    text-align: center;
+}
+.foot .foot2 div i{
+    margin-right: 20px;
+    font-size: 2em;
+}
+.foot .foot2 div i:hover{
+    cursor: pointer;
+    color: darkorange;
+    transition-duration: 0.25s;
+    transition-property: var(--white);
+    transition-timing-function: ease-in-out;
+    transform:scale(1.5);
+}
