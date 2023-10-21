@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="orderonline_style.css">
+    <link rel="icon" href="cloud-meatball-solid.ico">
+</head>
+<body>
+    <center>
+        <h1>Order Food. Try once Eat more!..</h1> <br>
+        <table class="t1">
+            <form action="" >
+               <tr>
+                <td><label for="name">Name:</label></td>
+                <td> <input type="text" name="name" placeholder="Enter Your Name"> </td>
+               </tr>
+               <tr></tr>
+                  <tr>
+                    <td> <label id="id1" for="age">Age:</label></td>
+                    <td><input type="number" name="age" placeholder="Enter Your Age"></td>
+                  </tr>  
+                  <tr></tr>     
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label></td>
+                        <td>
+                            <input type="radio" name="gender">
+                            <label  for="gender">Male</label>
+                            <input type="radio" name="gender">
+                            <label  for="gender">Female</label>
+                        </td>
+                </tr><tr></tr>    
+               <tr>
+                <td><label  for="">Select a food:</label></td>
+                <td>
+                    <select name="" id="fooditems" required>
+                        <option value="Chicken Burger">Chicken Burger &#8377 120</option>
+                        <option value="chicken fry">Chicken fry #8377 100</option>
+                        <option value="French Fries">French Fries #8377 70</option>
+                        <option value="Cutlut">Cutlut &#8377 70</option>
+                        <option value="Spring Roll Chicken">Spring Roll Chicken &#8377 150</option>
+                        <option value="Salad">Salad &#8377 60</option>
+                        <option value="Full Fried Chicken">Full Fried Chicken &#8377 250</option>
+                        <option value="Roasted leg piece">Roasted leg piece &#8377 60</option>
+                        <option value="KFC Chicken">KFC Chicken &#8377 150</option>
+                        <option value="Chicken 65">Chicken 65 &#8377 100</option>
+                    </select>
+                </td>
+               <tr></tr>
+               <tr></tr>
+               <tr>
+                   <td><label  for="Number of Items">Number of food items:</label></td>
+                   <td><input type="number"  name="Number of Items"  placeholder="Ex: 1" required></td>
+               </tr>
+                  <tr></tr>  
+                 <tr></tr>  
+                <tr>
+                    <td> <input type="checkbox" name="checkbox" required><label for="checkbox">I have read and agree to the terms of service </label></td>
+                    
+                </tr><tr></tr>
+                <tr class="submit">
+                    <td><input type="reset" value="Reset" class="submit"></td>
+                    <td><button id="b2" onclick="alert('Your order is sucessfully submitted. Thank you for your order!!!')" class="submit">Submit</button></td>
+                </tr><tr></tr>
+            </form>
+        </center>
+        </table>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+body{
+    color:white;
+    background-image: url(https://st.depositphotos.com/2576363/4639/i/450/depositphotos_46392931-stock-photo-italian-food-background.jpg);
+    background-size: cover;
+    
+}
+label{
+    font-size: 1.5rem;
+}
+input,button,select{
+    font-size: inherit;
+    margin-top:15px ;
+    padding:5px;
+    
+
+} 
+.t1 #b1,#b2{
+    padding:10px;
+    border-radius: 10px;
+    font-weight: 200;
+    transition: pink 5s ease-out;
+    cursor: pointer;
+}
+table form tr .submit:hover{
+  cursor: pointer;
+  color: whitesmoke;
+  color: goldenrod;
+}

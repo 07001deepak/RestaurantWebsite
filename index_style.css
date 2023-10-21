@@ -12,20 +12,24 @@ body{
     /* background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=600);
     background-size:cover; */
     width: 100%;
-    /* background-color: beige; */
+    scroll-behavior:smooth;
 }
 header {
     display: flex;
     /* position: fixed;
     margin-top:  0px; */
+    flex-grow: 0;
 }
 .firstpart .head{
-    background-color:rgb(0, 10, 0);
-    position: sticky;
+    background-color:rgb(41, 40, 40);
+    position: fixed;
+    width: 100%;
     top: 0px;
 }
-.firstpart {
-    background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=600);
+.secondpart {
+    /* background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&w=600); */
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-gourmet-japanese-restaurant-sushi-creative-simple-business-poster-design-image_157485.jpg);
+    
     background-size:cover; 
    
 }
@@ -59,27 +63,29 @@ header {
     font-weight: bolder;
 
 }
+.enjoy p{
+    margin-top: 180px;
+}
 .enjoy{
-   
     font-size: 4em;
     font-weight: bolder;
     display: flex;
     color: whitesmoke;
-    margin-top: 20vh;
+    margin-top:4.5vh;
     padding: 1em auto auto 1em;
     margin-left: 1.25em;
 }
 #para1{
-    font-size: medium;
-    padding-top: 2em;
-    padding-left:5em ;
+    font-size:larger;
+    /* padding-top: 2em; */
+    padding-left:4.5em ;
     font-weight: bold;
     color: whitesmoke;
 }
 .orderbutton {
     padding-top: 2em;
     padding-left:5em ;
-    padding-bottom: 5em;
+    padding-bottom: 8em;
     
 }
 .orderbutton button{
@@ -93,7 +99,7 @@ header {
 
 .orderbutton button:hover{
     cursor: pointer;
-    transition-duration: 0.5s;
+    transition-duration: 0.25s;
     transition-property: var(--white);
     transition-timing-function: ease-in-out;
     transform:scale(1.2);
@@ -303,6 +309,12 @@ table td{
     transform:scale(1.2);
    
 } 
+.image iframe{
+     /* background: transparent; */
+     border-radius: 10px;
+     /* height: 500px; */
+     /* width: 600px; */
+}
 .tables table{
     display: flex;
     justify-content: center;

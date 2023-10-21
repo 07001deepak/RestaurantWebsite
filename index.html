@@ -16,18 +16,20 @@
                    <h2><i class="fa-solid fa-cloud-meatball"></i> SDC Restaurant</h2>
              </div>
              <div class="home"> <a href="">Home</a></div>
-             <div class="menu"><a href="">Menu</a></div>
-             <div class="contact"><a href="">Contact</a> </div>
-         </header>
+             <div class="menu"><a href="#foodmenu1">Menu</a></div>
+             <div class="contact"><a href="#contact">Contact</a> </div>
+         </header></div><br><br>
+         <div class="secondpart">
+
              <div class="enjoy">
-             Enjoy our Delicious Meals...
+             <p>Enjoy our Delicious Meals...</p>
             </div>
             <div id="para1">Most crispy, delicious and healthy foods are available.Try once and Eat more....</div>
             <div class="orderbutton">
-             <button>Order Online</button>
+             <button onclick="location.href='orderonline.html'" >Order Online</button>
             </div>
     
-    </div>
+         </div>
     <div class="cards">
     <div class="box"> <i class="fa-solid fa-user"></i> <br> <h2>Master Chef</h2> <br> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto labore ea atque ex voluptatum quo dolores odit doloribus tenetur!</p></div>
     <div class="box"><i class="fa-solid fa-utensils"></i> <br> <h2>Quality food</h2> <br> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto labore ea atque ex voluptatum quo dolores odit doloribus tenetur!</p> </div>
@@ -54,7 +56,7 @@
     <div><h2>Food Menu</h2></div>
     <div><h1>Most popular Items</h1></div>
    </div>
-   <div class="foodflex">
+   <div class="foodflex" id="foodmenu1">
        <div class="fooditems">
           <div><img src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=600" alt="chicken burger" width="100px" height="100px"><span id="chicken">Chicken Burger </span> <span>&#8377 120</span></div>
           <div><img src="https://images.pexels.com/photos/6210933/pexels-photo-6210933.jpeg?auto=compress&cs=tinysrgb&w=600" alt="chicken fry" width="100px" height="100px" ><span>Chicken Fry</span> <span>&#8377 100</span> </div>
@@ -130,7 +132,7 @@
             <h2 id="h2">Reservation</h2>
             <h1 >Book a Table Online..</h1>
                 <div id="b1"><input type="text" placeholder="Enter Your Name" ></div>
-                <div id="b2"><input type="email" placeholder="Enter Your Email"></div>
+                <div id="b2"><input type="email" placeholder="Enter Your Email" required></div>
                 <div id="b3"><input type="datetime" placeholder="Date & time"></div>
                 <div id="b4"><select name="" id="">
                     <option value="People 1">People 1</option>
@@ -138,7 +140,9 @@
                     <option value="People 3">People 3</option>
                     <option value="People 4">People 4</option>
                 </select></div>
-                <div id="b5"><input type="textarea" placeholder="Special Request"></div>
+                <!-- <div id="b5"><input type="text" placeholder="Special Request"></div> -->
+                <div id="b5"> <textarea name="text" id="text" cols="30" rows="10" placeholder="Special Request"></textarea></div>
+               
                 <div id="b6"><button>Book Now</button></div>
         </form>
     </div>
@@ -212,7 +216,7 @@
               <div id="newsleter">
                 <h3>NewsLetter</h3>
                 <input type="email" placeholder="Your Email" required >
-                <button>Sign Up</button>
+                <button onclick="location.href='signup.html'">Sign Up</button>
               </div>
         </footer><br><br>
         <footer class="foot2">
